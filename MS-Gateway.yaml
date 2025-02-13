@@ -11,6 +11,7 @@ spring:
             - Path=/commande/**
           filters:
             - RewritePath=/commande/(?<path>.*) , /${path}
+            - BeforeDate= 2024-01-10T17:42:47.789-07:00[Africa/Tunis]
         - id: microservice-transaction
           uri: lb://AbdaouiSindaGestionPaiement
           predicates:
